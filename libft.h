@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fgorlich <fgorlich@student.42.fr>          +#+  +:+       +#+        */
+/*   By: nix <nix@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/16 19:07:03 by fgorlich          #+#    #+#             */
-/*   Updated: 2024/11/22 17:58:45 by fgorlich         ###   ########.fr       */
+/*   Updated: 2025/05/30 18:07:15 by nix              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 
 # include <stdlib.h>
+# include "printf.h"
 
 typedef struct s_list
 {
@@ -64,5 +65,6 @@ t_list	*ft_lstlast(t_list *lst);
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 t_list	*ft_lstnew(void *content);
 int		ft_lstsize(t_list *lst);
+int		ft_printf(const char *s, ...);
 
 #endif
